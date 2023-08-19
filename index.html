@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="page1, page2, page3">
+    <meta name="Description" content="This is my website">
+    <title>My Website</title>
+    <link rel="website icon" href="images/website-icon.png">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+        <div class="container-fluid">
+            <!-- web-logo -->
+            <a class="navbar-brand" href="#">
+                <img src="images/logo1.jpg" alt="img-Logo" style="width:40px;" class="rounded-pill">
+            </a>
+            <!-- web-title -->
+            <a class="navbar-brand" href="#"
+                style="background-image: linear-gradient(to bottom, red, blue);
+            background-clip: text;-webkit-background-clip: text; /* For Safari/Chrome */color: transparent;">Hours-Company</a>
+            <!--nav-bar-trigger  -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- nav-var -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <!-- nav-links -->
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Travels</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Offers</a>
+                    </li>
+                    <!-- dropdown -->
+                    <div class="dropdown">
+                        <button class="btn btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false" style="margin-top: 6px; border: 1px solid;">
+                            Places
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Cairo</a></li>
+                            <li><a class="dropdown-item" href="#">Luxor</a></li>
+                            <li><a class="dropdown-item" href="#">Aswan</a></li>
+                            <li><a class="dropdown-item" href="#">Giza</a></li>
+                            <li><a class="dropdown-item" href="#">Pyramids</a></li>
+                            <li><a class="dropdown-item" href="#">Templates</a></li>
+                        </ul>
+                    </div>
+                </ul>
+                <!-- searchBox+buttons -->
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-primary" type="submit">Search</button>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                        style="margin-left: 10px;">
+                        Login
+                    </button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- ---------------------------------------------------------------------------------------------------------------------------------- -->
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Login Form</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1">
+                    </div>
+                    <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked"
+                            checked>
+                        <label class="form-check-label" for="flexSwitchCheckChecked">remember me</label>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" style="margin-left: 339px;">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ---------------------------------------------------------------------------------------------------------------------------------- -->
+    <!-- icons on the right -->
+    <div class="icons-container">
+        <ul>
+            <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+            <li><a href="#"><i class="fab fa-instagram-square"></i></a></li>
+            <li><a href="#"><i class="fab fa-whatsapp-square"></i></a></li>
+            <li><a href="#"><i class="fab fa-snapchat-square"></i></a></li>
+            <li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
+        </ul>
+    </div>
+    <!-- ---------------------------------------------------------------------------------------------------------------------------------- -->
+    <!-- Carousel -->
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/carousel/img1.jpg" class="d-block w-100" style="height: 100vh;" alt="...">
+                <div class="carousel-caption" style="background-color: rgba(70, 142, 235, 0.295);">
+                    <h1>Cairo</h1>
+                    <p>Our first destination, you will not regret it</p>
+                    <button type="button" class="btn btn-primary btn-lg">Book</button>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/carousel/img2.jpg" class="d-block w-100" style="height: 100vh;" alt="...">
+                <div class="carousel-caption" style="background-color: rgba(70, 142, 235, 0.295);">
+                    <h1>Pyramids</h1>
+                    <p>One of the seven Wonders of the world</p>
+                    <button type="button" class="btn btn-primary btn-lg">Book</button>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/wwwwww.jpg" class="d-block w-100" style="height: 100vh;" alt="...">
+                <div class="carousel-caption" style="background-color: rgba(70, 142, 235, 0.295);">
+                    <h1>Hurghada</h1>
+                    <p>Discover the “City of a Thousand Minarets”.</p>
+                    <button type="button" class="btn btn-primary btn-lg">Book</button>
+                </div>
+            </div>
+        </div>
+        <!-- ----------- -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!-- ---------------------------------------------------------------------------------------------------------------------------------- -->
+    <!-- second section -->
+    <div class="container-fluid bg-body-tertiary" style="padding: 20px;">
+        <h2>Welcome</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis consequatur, eum quia perferendis ea
+            temporibus enim voluptate voluptas, sed, laborum aliquid do Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Minima dolor explicabo similique ducimus autem alias odio dolorum aspernatur odit earum
+            facere enim voluptate dolores, placeat optio voluptatum ea accusamus repudiandae.
+        </p>
+        <button type="button" class="btn btn-primary">Learn more!</button>
+    </div>
+    <hr>
+    <!-- ---------------------------------------------------------------------------------------------------------------------------------- -->
+    <!-- three collapse items -->
+    <div class="container-fluid bg-body-tertiary" style="padding: 20px;">
+        <h1 style="text-align: center;">Popular destinations in Egypt</h1>
+    </div>
+    <br>
+    <div class="accordion" id="accordionExample">
+
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                    aria-expanded="true" aria-controls="collapseOne">
+                    Accordion Item #1
+                </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse
+                    plugin adds the appropriate classes that we use to style each element. These classes control the
+                    overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of
+                    this with custom CSS or overriding our default variables. It's also worth noting that just about any
+                    HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Accordion Item #2
+                </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <strong>This is the second item's accordion body.</strong> It is hidden by default, until the
+                    collapse plugin adds the appropriate classes that we use to style each element. These classes
+                    control the overall appearance, as well as the showing and hiding via CSS transitions. You can
+                    modify any of this with custom CSS or overriding our default variables. It's also worth noting that
+                    just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit
+                    overflow.
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Accordion Item #3
+                </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <strong>This is the third item's accordion body.</strong> It is hidden by default, until the
+                    collapse plugin adds the appropriate classes that we use to style each element. These classes
+                    control the overall appearance, as well as the showing and hiding via CSS transitions. You can
+                    modify any of this with custom CSS or overriding our default variables. It's also worth noting that
+                    just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit
+                    overflow.
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <br>
+    <!-- ---------------------------------------------------------------------------------------------------------------------------------- -->
+    <!-- translates section -->
+    <div class="container-fluid bg-body-tertiary">
+        <h1 style="text-align: center;">Translate into English</h1>
+        <div style="padding-left: 40px;">
+            <h4>write and translate <a style="text-decoration: none;" href="#">press here</a></h4>
+            <button id="btn" class="btn btn-primary" style="margin: 15px 0;" title="Copy to clipboard"
+                data-bs-toggle="popover" data-bs-trigger="hover" data-bs-content="Popover text">Copy</button>
+            <br>
+            <textarea style="width: 90vw; padding: 10px;" placeholder="translate" cols="30" rows="10"></textarea>
+        </div>
+        <br><br>
+    </div>
+    <hr>
+    <div class="container-fluid bg-body-tertiary">
+        <h1 style="text-align: center;">Translate into German</h1>
+        <div style="padding-left: 40px;">
+            <h4>write and translate <a style="text-decoration: none;" href="#">press here</a></h4>
+            <button id="btn" class="btn btn-primary" style="margin: 15px 0;" title="Copy to clipboard"
+                data-bs-toggle="popover" data-bs-trigger="hover" data-bs-content="Popover text">Copy</button>
+            <br>
+            <textarea style="width: 90vw; padding: 10px;" placeholder="translate" cols="30" rows="10"></textarea>
+        </div>
+        <br><br>
+    </div>
+    <hr>
+    <div class="container-fluid bg-body-tertiary">
+        <h1 style="text-align: center;">Translate into French</h1>
+        <div style="padding-left: 40px;">
+            <h4>write and translate <a style="text-decoration: none;" href="#">press here</a></h4>
+            <button id="btn" class="btn btn-primary" style="margin: 15px 0;" title="Copy to clipboard"
+                data-bs-toggle="popover" data-bs-trigger="hover" data-bs-content="Popover text">Copy</button>
+            <br>
+            <textarea style="width: 90vw; padding: 10px;" placeholder="translate" cols="30" rows="10"></textarea>
+        </div>
+        <br><br>
+    </div>
+
+    <!-- ---------------------------------------------------------------------------------------------------------------------------------- -->
+    <!-- fixed-background section -->
+    <div style="width: 100vw; height: 400px; background: url(images/aswan/img12.jpg) fixed;"></div>
+    <!-- ---------------------------------------------------------------------------------------------------------------------------------- -->
+    <!-- the 8 cards section -->
+    <div class="container-fluid">
+        <div class="row justify-content-center" style=" width: fit-content;">
+            <div class="cardc col-lg-3 col-md-12 shadow-lg p-4 mb-4 bg-white" style="width:400px; margin: 20px ;">
+                <img class="card-img-top" src="images/img2.jpg" alt="Card image">
+                <div class="card-body">
+                    <h4 class="card-title">Cairo</h4>
+                    <p class="card-text">Most beautiful city in egypt</p>
+                    <a href="#" class="btn btn-primary">Learn more!</a>
+                </div>
+            </div>
+            <div class="cardc col-lg-3 col-md-12 shadow-lg p-4 mb-4 bg-white" style="width:400px; margin: 20px ;">
+                <img class="card-img-top" src="images/img2.jpg" alt="Card image">
+                <div class="card-body">
+                    <h4 class="card-title">Cairo</h4>
+                    <p class="card-text">Most beuatiful city in egypt</p>
+                    <a href="#" class="btn btn-primary">Learn more!</a>
+                </div>
+            </div>
+            <div class="cardc col-lg-3 col-md-12 shadow-lg p-4 mb-4 bg-white" style="width:400px; margin: 20px ;">
+                <img class="card-img-top" src="images/img2.jpg" alt="Card image">
+                <div class="card-body">
+                    <h4 class="card-title">Cairo</h4>
+                    <p class="card-text">Most beuatiful city in egypt</p>
+                    <a href="#" class="btn btn-primary">Learn more!</a>
+                </div>
+            </div>
+            <div class="cardc col-lg-3 col-md-12 shadow-lg p-4 mb-4 bg-white" style="width:400px; margin: 20px ;">
+                <img class="card-img-top" src="images/img2.jpg" alt="Card image">
+                <div class="card-body">
+                    <h4 class="card-title">Cairo</h4>
+                    <p class="card-text">Most beuatiful city in egypt</p>
+                    <a href="#" class="btn btn-primary">Learn more!</a>
+                </div>
+            </div>
+            <div class="cardc col-lg-3 col-md-12 shadow-lg p-4 mb-4 bg-white" style="width:400px; margin: 20px ;">
+                <img class="card-img-top" src="images/img2.jpg" alt="Card image">
+                <div class="card-body">
+                    <h4 class="card-title">Cairo</h4>
+                    <p class="card-text">Most beautiful city in egypt</p>
+                    <a href="#" class="btn btn-primary">Learn more!</a>
+                </div>
+            </div>
+            <div class="cardc col-lg-3 col-md-12 shadow-lg p-4 mb-4 bg-white" style="width:400px; margin: 20px ;">
+                <img class="card-img-top" src="images/img2.jpg" alt="Card image">
+                <div class="card-body">
+                    <h4 class="card-title">Cairo</h4>
+                    <p class="card-text">Most beuatiful city in egypt</p>
+                    <a href="#" class="btn btn-primary">Learn more!</a>
+                </div>
+            </div>
+            <div class="cardc col-lg-3 col-md-12 shadow-lg p-4 mb-4 bg-white" style="width:400px; margin: 20px ;">
+                <img class="card-img-top" src="images/img2.jpg" alt="Card image">
+                <div class="card-body">
+                    <h4 class="card-title">Cairo</h4>
+                    <p class="card-text">Most beuatiful city in egypt</p>
+                    <a href="#" class="btn btn-primary">Learn more!</a>
+                </div>
+            </div>
+            <div class="cardc col-lg-3 col-md-12 shadow-lg p-4 mb-4 bg-white" style="width:400px; margin: 20px ;">
+                <img class="card-img-top" src="images/img2.jpg" alt="Card image">
+                <div class="card-body">
+                    <h4 class="card-title">Cairo</h4>
+                    <p class="card-text">Most beuatiful city in egypt</p>
+                    <a href="#" class="btn btn-primary">Learn more!</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ---------------------------------------------------------------------------------------------------------------------------------- -->
+    <!-- fixed-background section -->
+    <div style="width: 100vw; height: 400px; background: url(images/aswan/img12.jpg) fixed;"></div>
+    <br>
+    <!-- ---------------------------------------------------------------------------------------------------------------------------------- -->
+    <div class="container-fluid bg-body-tertiary">
+        <h1 style="text-align: center; padding: 20px;">THANKS</h1>
+    </div>
+    <!-- ---------------------------------------------------------------------------------------------------------------------------------- -->
+    <!-- 3 cards section -->
+    <div class="container" style="color: white;">
+        <!-- card1 -->
+        <div class="row justify-content-md-center ">
+            <div class="item-c col-lg-3 col-md-7 shadow-lg " style="position: relative; height: 450px; background-image: linear-gradient(to bottom, black , white);
+                    margin: 20px; border-radius: 40px;">
+                <img src="images/trainer-1.jpg" alt="ERROR" width="108%" height="100%"
+                    style="margin-left: -12px; opacity: .5; border-radius: 40px; ">
+                <div
+                    style="font-weight: bold; padding-left: 30px; position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
+                    <h5 style="font-size: 20px; font-weight: bold;">All thanks and appreciation</h5>
+                    <p><i class="far fa-clock"></i> October 15,2008</p>
+                    <div style="height: 100px; width: 100px; margin-top: 150px;">
+                        <img src="images/trainer-1.jpg" alt="ERROE"
+                            style="margin-top: 30px; width: 100%; height: 100%; border-radius: 50%;">
+                    </div>
+                    <p style="margin-top:30px ;">Eng:Amr Atef <br> Front-end developer</p>
+                </div>
+            </div>
+            <!-- card2 -->
+            <div class="item-c col-lg-3 col-md-7 shadow-lg " style="position: relative; height: 450px; background-image: linear-gradient(to bottom, black , white);
+                    margin: 20px; border-radius: 40px;">
+                <img src="images/trainer-2.jpg" alt="ERROR" width="108%" height="100%"
+                    style="margin-left: -12px; opacity: .5; border-radius: 40px; ">
+                <div
+                    style="font-weight: bold; padding-left: 30px; position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
+                    <h5 style="font-size: 20px; font-weight: bold;">All thanks and appreciation</h5>
+                    <p><i class="far fa-clock"></i> October 15,2008</p>
+                    <div style="height: 100px; width: 100px; margin-top: 150px;">
+                        <img src="images/trainer-2.jpg" alt="ERROE"
+                            style="margin-top: 30px; width: 100%; height: 100%; border-radius: 50%;">
+                    </div>
+                    <p style="margin-top:30px ;">Eng:Sara Ali <br> Back-end devoloper</p>
+                </div>
+            </div>
+            <!-- card3 -->
+            <div class="item-c col-lg-3 col-md-7 shadow-lg " style="position: relative; height: 450px; background-image: linear-gradient(to bottom, black , white);
+                    margin: 20px; border-radius: 40px;">
+                <img src="images/trainer-3.jpg" alt="ERROR" width="108%" height="100%"
+                    style="margin-left: -12px; opacity: .5; border-radius: 40px; ">
+                <div
+                    style="font-weight: bold; padding-left: 30px; position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
+                    <h5 style="font-size: 20px; font-weight: bold;">All thanks and appreciation</h5>
+                    <p><i class="far fa-clock"></i> October 15,2008</p>
+                    <div style="height: 100px; width: 100px; margin-top: 150px;">
+                        <img src="images/trainer-3.jpg" alt="ERROE"
+                            style="margin-top: 30px; width: 100%; height: 100%; border-radius: 50%;">
+                    </div>
+                    <p style="margin-top:30px ;">Eng:Ahmed Mohamed <br> Full-stack devoloper</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- ---------------------------------------------------------------------------------------------------------------------------------- -->
+    <!-- 4 full-width card section -->
+    <div class="container">
+        <!-- card1 -->
+        <div class="d-flex  product  mb-4 shadow-lg" style="height: 450px;">
+            <div class="col-lg-8 col-sm-12 product-info">
+                <div style="padding: 30px;">
+                    <h3>Podcast news</h3>
+                    <p class="card-text"><small class="text-body-secondary"><i class="fas fa-calendar-alt"></i> Last
+                            updated 3 mins ago</small></p>
+                    <div style="border: 2px solid blue; border-radius: 18%; width: 100px; margin-bottom: 15px;"></div>
+                    <p>Hurghada: Cairo and Giza Highlights Tour with BBQ Lunch
+                        Discover the “City of a Thousand Minarets” on a full-day tour of Cairo, with round-trip
+                        transfers by bus from Hurghada., admiring views of the Gulf of Suez. You will be accompanied by
+                        a transfer guide who will accompany you on the journey until you meet your Egyptologist guide.
+                        Upon arrival, your private Egyptologist guide will meet you and take you to Giza Plateau to see
+                        the oldest of the 7 Wonders of the Ancient World.</p>
+                    <div>
+                        <a class="btn btn-light" href="#">podcast</a>
+                        <a class="btn btn-light" href="#">55m</a>
+                        <a class="btn btn-light" href="#">Play now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 product-img" style="height: 100%;">
+                <img src="images/full-width/img2.jpg" alt="ERROR" height="100%" width="100%"
+                    style="clip-path: polygon(37.36% 0%, 100% 0%, 100% 100%, 17.96% 100%, 0.41% 0%);">
+            </div>
+        </div>
+        <!-- card2 -->
+        <div class="d-flex flex-row-reverse product mb-4 shadow-lg" style="height: 450px;">
+            <div class="col-lg-8 col-sm-12 product-info">
+                <div style="padding: 30px;">
+                    <h3>Podcast news</h3>
+                    <p class="card-text"><small class="text-body-secondary"><i class="fas fa-calendar-alt"></i> Last
+                            updated 3 mins ago</small></p>
+                    <div style="border: 2px solid blue; border-radius: 18%; width: 100px; margin-bottom: 15px;"></div>
+                    <p>Hurghada: Cairo and Giza Highlights Tour with BBQ Lunch
+                        Discover the “City of a Thousand Minarets” on a full-day tour of Cairo, with round-trip
+                        transfers by bus from Hurghada., admiring views of the Gulf of Suez. You will be accompanied by
+                        a transfer guide who will accompany you on the journey until you meet your Egyptologist guide.
+                        Upon arrival, your private Egyptologist guide will meet you and take you to Giza Plateau to see
+                        the oldest of the 7 Wonders of the Ancient World.</p>
+                    <div>
+                        <a class="btn btn-light" href="#">podcast</a>
+                        <a class="btn btn-light" href="#">55m</a>
+                        <a class="btn btn-light" href="#">Play now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 product-img" style="height: 100%;">
+                <img src="images/full-width/img2.jpg" alt="ERROR" height="100%" width="100%"
+                    style="clip-path: polygon(-1% -2%, 84% -2%, 99% 103%, 0% 100%);">
+            </div>
+        </div>
+        <!-- card3 -->
+        <div class="d-flex product  mb-4 shadow-lg" style="height: 450px;">
+            <div class="col-lg-8 col-sm-12 product-info">
+                <div style="padding: 30px;">
+                    <h3>Podcast news</h3>
+                    <p class="card-text"><small class="text-body-secondary"><i class="fas fa-calendar-alt"></i> Last
+                            updated 3 mins ago</small></p>
+                    <div style="border: 2px solid blue; border-radius: 18%; width: 100px; margin-bottom: 15px;"></div>
+                    <p>Hurghada: Cairo and Giza Highlights Tour with BBQ Lunch
+                        Discover the “City of a Thousand Minarets” on a full-day tour of Cairo, with round-trip
+                        transfers by bus from Hurghada., admiring views of the Gulf of Suez. You will be accompanied by
+                        a transfer guide who will accompany you on the journey until you meet your Egyptologist guide.
+                        Upon arrival, your private Egyptologist guide will meet you and take you to Giza Plateau to see
+                        the oldest of the 7 Wonders of the Ancient World.</p>
+                    <div>
+                        <a class="btn btn-light" href="#">podcast</a>
+                        <a class="btn btn-light" href="#">55m</a>
+                        <a class="btn btn-light" href="#">Play now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 product-img" style="height: 100%;">
+                <img src="images/full-width/img2.jpg" alt="ERROR" height="100%" width="100%"
+                    style="clip-path: polygon(37.36% 0%, 100% 0%, 100% 100%, 17.96% 100%, 0.41% 0%);">
+            </div>
+        </div>
+        <!-- card4 -->
+        <div class="d-flex flex-row-reverse product mb-4 shadow-lg" style="height: 450px;">
+            <div class="col-lg-8 col-sm-12 product-info">
+                <div style="padding: 30px;">
+                    <h3>Podcast news</h3>
+                    <p class="card-text"><small class="text-body-secondary"><i class="fas fa-calendar-alt"></i> Last
+                            updated 3 mins ago</small></p>
+                    <div style="border: 2px solid blue; border-radius: 18%; width: 100px; margin-bottom: 15px;"></div>
+                    <p>Hurghada: Cairo and Giza Highlights Tour with BBQ Lunch
+                        Discover the “City of a Thousand Minarets” on a full-day tour of Cairo, with round-trip
+                        transfers by bus from Hurghada., admiring views of the Gulf of Suez. You will be accompanied by
+                        a transfer guide who will accompany you on the journey until you meet your Egyptologist guide.
+                        Upon arrival, your private Egyptologist guide will meet you and take you to Giza Plateau to see
+                        the oldest of the 7 Wonders of the Ancient World.</p>
+                    <div>
+                        <a class="btn btn-light" href="#">podcast</a>
+                        <a class="btn btn-light" href="#">55m</a>
+                        <a class="btn btn-light" href="#">Play now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 product-img" style="height: 100%;">
+                <img src="images/full-width/img2.jpg" alt="ERROR" height="100%" width="100%"
+                    style="clip-path: polygon(-1% -2%, 84% -2%, 99% 103%, 0% 100%);">
+            </div>
+        </div>
+    </div>
+    <!-- ---------------------------------------------------------------------------------------------------------------------------------- -->
+    <!-- 4-social-logos section -->
+    <div class="container text-center" style="margin-top: 70px; font-size: 30px;">
+        <h2 style="margin-bottom: 30px;">Heading</h2>
+        <div class="row justify-content-md-center">
+            <div class="col-lg-2 col-md-12" style="border-radius: 10px; box-shadow: 10px 10px 5px grey;">
+                <h3>Linked in</h3>
+                <img style="border-radius: 10px;" class="logo-img" src="images/logo1 (2).jpg" alt="ERROR!">
+                <p><a href="#" class="link-underline-light link-opacity-25-hover">Go to link</a></p>
+            </div>
+            <div class="col-lg-2 col-md-12" style="border-radius: 10px; box-shadow: 10px 10px 5px grey;">
+                <h3>Instagram</h3>
+                <img style="border-radius: 10px;" class="logo-img" src="images/logo2.jpg" alt="ERROR!">
+                <p><a href="#" class="link-underline-light link-opacity-25-hover">Go to link</a></p>
+            </div>
+            <div class="col-lg-2 col-md-12" style="border-radius: 10px; box-shadow: 10px 10px 5px grey;">
+                <h3>WhatsApp</h3>
+                <img style="border-radius: 10px;" class="logo-img" src="images/logo3.jpg" alt="ERROR!">
+                <p><a href="#" class="link-underline-light link-opacity-25-hover">Go to link</a></p>
+            </div>
+            <div class="col-lg-2 col-md-12" style="border-radius: 10px; box-shadow: 10px 10px 5px grey;">
+                <h3>TikTok</h3>
+                <img style="border-radius: 10px;" class="logo-img" src="images/logo4.jpg" alt="ERROR!">
+                <p><a href="#" class="link-underline-light link-opacity-25-hover">Go to link</a></p>
+            </div>
+        </div>
+    </div>
+    <!-- ---------------------------------------------------------------------------------------------------------------------------------- -->
+    <!-- footer -->
+    <footer style="width: 100vw; background-color: rgb(85, 226, 242); min-height: 350px; margin-top: 30px;">
+        <div class="container-fluid">
+            <div class="row">
+                <!-- item1 -->
+                <div class="col-lg-4 col-sm-12" style="margin-top: 30px; text-align: center;">
+                    <div style="width: 80%; height: 1px; border: 1px solid whitesmoke; margin: auto;"></div>
+                    <div class="row justify-content-center">
+                        <img src="images/logo1 (2).jpg" class="col-6" alt="Cinque Terre"
+                            style="padding: 10px 0; height: 100px; width: 100px; border-radius: 50%;">
+                        <h4 class="col-6" style="padding: 35px 0;">Phone numbers</h4>
+                    </div>
+                    <div style="width: 80%; height: 1px; border: 1px solid whitesmoke; margin: auto;"></div>
+                    <p><a style="text-decoration: none;" class="link-opacity-25-hover" href="#">+(20) 6546 2366</a></p>
+                    <p><a style="text-decoration: none;" class="link-opacity-25-hover" href="#">+(20) 6546 2366</a></p>
+                    <p><a style="text-decoration: none;" class="link-opacity-25-hover" href="#">+(20) 6546 2366</a></p>
+                </div>
+                <!-- item2 -->
+                <div class="col-lg-4 col-sm-12" style="margin-top: 30px; text-align: center;">
+                    <div style="width: 80%; height: 1px; border: 1px solid whitesmoke; margin: auto;"></div>
+                    <div class="row justify-content-center">
+                        <img src="images/logo1 (2).jpg" class="col-6" alt="Cinque Terre"
+                            style="padding: 10px 0; height: 100px; width: 100px; border-radius: 50%;">
+                        <h4 class="col-6" style="padding: 35px 0;">VIP links</h4>
+                    </div>
+                    <div style="width: 80%; height: 1px; border: 1px solid whitesmoke; margin: auto;"></div>
+                    <p><a style="text-decoration: none;" class="link-opacity-25-hover" href="#">Our history</a></p>
+                    <p><a style="text-decoration: none;" class="link-opacity-25-hover" href="#">our team</a></p>
+                    <p><a style="text-decoration: none;" class="link-opacity-25-hover" href="#">more about us</a></p>
+                </div>
+                <!-- item3 -->
+                <div class="col-lg-4 col-sm-12" style="margin-top: 30px; text-align: center;">
+                    <div style="width: 80%; height: 1px; border: 1px solid whitesmoke; margin: auto;"></div>
+                    <div class="row justify-content-center">
+                        <img src="images/logo1 (2).jpg" class="col-6" alt="Cinque Terre"
+                            style="padding: 10px 0; height: 100px; width: 100px; border-radius: 50%;">
+                        <h4 class="col-6" style="padding: 35px 0;">Vision</h4>
+                    </div>
+                    <div style="width: 80%; height: 1px; border: 1px solid whitesmoke; margin: auto;"></div>
+                    <p><a style="text-decoration: none;" class="link-opacity-25-hover" href="#">services</a></p>
+                    <p><a style="text-decoration: none;" class="link-opacity-25-hover" href="#">offers</a></p>
+                    <p><a style="text-decoration: none;" class="link-opacity-25-hover" href="#">Links</a></p>
+                </div>
+                <!-- item4 -->
+                <div class="col-lg-12 " style="text-align: center;">
+                    <div style="width: 98%; height: 1px; border: 1px solid whitesmoke;"></div>
+                    <h4>COPYRIGHTS &copy; AMR ATEF KAMEL , GOOD COMPANY . ALL RIGHTS</h4>
+                    <div style="width: 98%; height: 1px; border: 1px solid whitesmoke;"></div>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+    <!-- ---------------------------------------------------------------------------------------------------------------------------------- -->
+    <script src="js/script.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
